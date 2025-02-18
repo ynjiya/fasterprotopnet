@@ -1,0 +1,31 @@
+(venv) yt2623@willow20:EvalProtoPNet$ python eval_stability.py --base_architecture resnet34 --resume /vol/bitbucket/yt2623/iso/BetterProtoPNet/saved_models/resnet34/200_250_185_perfcounter-profiler-step-2/10_18push0.7537.pth
+
+<class 'model.PPNet'>
+194it [00:20,  9.45it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 200/200 [00:29<00:00,  6.74it/s]
+194it [00:24,  7.86it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 200/200 [00:29<00:00,  6.88it/s]
+Stability Score : 81.22%
+(venv) yt2623@willow20:EvalProtoPNet$ python eval_consistency.py --base_architecture resnet34 --resume /vol/bitbucket/yt2623/iso/BetterProtoPNet/saved_
+models/resnet34/200_250_185_perfcounter-profiler-step-2/10_18push0.7537.pth
+
+<class 'model.PPNet'>
+194it [00:20,  9.46it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 200/200 [00:30<00:00,  6.66it/s]
+Consistency Score : 16.15%
+(venv) yt2623@willow20:EvalProtoPNet$ python eval_stability.py --base_architecture resnet34 --resume /vol/bitbucket/yt2623/iso/BetterProtoPNet/saved_models/resnet34/200_250_185_custom_topk_dataload_perfcounter-profiler-step-2/10_7push0.7477.pth
+
+<class 'model_custom.PPNet'>
+194it [00:20,  9.45it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 200/200 [00:29<00:00,  6.79it/s]
+194it [00:24,  7.89it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 200/200 [00:30<00:00,  6.58it/s]
+Stability Score : 66.54%
+(venv) yt2623@willow20:EvalProtoPNet$ 
+(venv) yt2623@willow20:EvalProtoPNet$ python eval_consistency.py --base_architecture resnet34 --resume /vol/bitbucket/yt2623/iso/BetterProtoPNet/saved_
+models/resnet34/200_250_185_custom_topk_dataload_perfcounter-profiler-step-2/10_7push0.7477.pth
+
+<class 'model_custom.PPNet'>
+194it [00:20,  9.45it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 200/200 [00:32<00:00,  6.18it/s]
+Consistency Score : 37.4%
